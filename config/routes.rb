@@ -1,4 +1,6 @@
 Aceldev::Application.routes.draw do
+  resource :home, :only => :show
+  root :to => 'home#show'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
